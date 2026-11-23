@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROSHIQ — бесплатные помощники для Dota 2 и Deadlock</title>
+<meta name="description" content="ROSHIQ — бесплатные помощники для Windows: подсказки в матче и разбор после игры для Dota 2 и Deadlock.">
+<link rel="icon" href="https://baramobatare-hash.github.io/ROSHIQ/site/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#050505;--panel:#111110;--line:#292623;--text:#F2F0EC;--grey:#AAA9A7;--dota:#FF8A3D;--dl:#3DF5D0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--text);font:16px/1.55 Inter,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+main{width:min(1040px,100% - 32px);margin:0 auto;padding:72px 0 40px;flex:1}
+h1{font-size:clamp(48px,9vw,104px);line-height:.92;letter-spacing:-.04em;margin:0 0 18px;font-weight:900}
+.lead{color:var(--grey);font-size:19px;max-width:560px;margin:0 0 48px}
+.games{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.game{position:relative;display:flex;flex-direction:column;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--panel);color:inherit;text-decoration:none;min-height:300px;overflow:hidden}
+.game::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--c)}
+.game h2{font-size:40px;letter-spacing:-.03em;margin:0 0 10px;font-weight:850}
+.game p{color:var(--grey);margin:0 0 24px;max-width:38ch}
+.game ul{margin:0 0 28px;padding:0;list-style:none;display:grid;gap:6px}
+.game li{padding-left:18px;position:relative}.game li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--c)}
+.go{margin-top:auto;display:inline-flex;align-self:flex-start;align-items:center;min-height:46px;padding:0 20px;border-radius:12px;background:var(--c);color:#0a0a0a;font-weight:800}
+.game:hover{border-color:var(--c)}
+.game:focus-visible,a:focus-visible{outline:2px solid var(--c,var(--dota));outline-offset:3px}
+.dota{--c:var(--dota)}.dl{--c:var(--dl)}
+footer{width:min(1040px,100% - 32px);margin:0 auto;padding:24px 0 40px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--grey);font-size:14px}
+footer a{color:var(--text);text-decoration:none}footer a:hover{text-decoration:underline}
+footer span{margin-right:auto}
+@media (max-width:720px){.games{grid-template-columns:1fr}main{padding-top:48px}.game{min-height:0}}
+</style>
+</head>
+<body>
+<main>
+  <h1>ROSHIQ</h1>
+  <p class="lead">Бесплатные помощники для Windows. Подсказывают во время матча и разбирают игру после. Память игры не читают.</p>
+  <div class="games">
+    <a class="game dota" href="https://baramobatare-hash.github.io/ROSHIQ/">
+      <h2>Dota 2</h2>
+      <p>Драфт, сборки, таймеры и Рошан прямо в матче, разбор ошибок после игры.</p>
+      <ul><li>Сборки по свежей мете</li><li>Разбор матча с объяснением ИИ</li><li>Разбор в браузере и в Telegram</li></ul>
+      <span class="go">Открыть ROSHIQ для Dota 2</span>
+    </a>
+    <a class="game dl" href="https://github.com/Baramobatare-hash/ROSHIQ-Deadlock/releases/latest">
+      <h2>Deadlock</h2>
+      <p>Отдельное приложение для Deadlock от того же автора.</p>
+      <ul><li>Установщик и портативная версия</li><li>Обновляется само</li><li>Бесплатно, с открытым кодом</li></ul>
+      <span class="go">Скачать ROSHIQ для Deadlock</span>
+    </a>
+  </div>
+</main>
+<footer>
+  <span>ROSHIQ — проект FIGI6</span>
+  <a href="https://t.me/RoshiqAppBot/app">Telegram</a>
+  <a href="https://discord.gg/BhZTcTFwuM">Discord</a>
+  <a href="https://www.youtube.com/channel/UC3xilUrjDyh56-WjvLwdOFQ">YouTube</a>
+  <a href="https://vk.ru/roshiq">ВКонтакте</a>
+  <a href="https://github.com/Baramobatare-hash">GitHub</a>
+</footer>
+</body>
+</html>
