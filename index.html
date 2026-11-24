@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..900&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#050505;--panel:#111110;--line:#292623;--text:#F2F0EC;--grey:#AAA9A7;--dota:#FF8A3D;--dl:#3DF5D0}
+:root{--ink:#050505;--panel:#111110;--line:#292623;--text:#F2F0EC;--grey:#AAA9A7;--dota:#FF8A3D;--dl:#C9A15B}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--text);font:16px/1.55 Inter,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column}
 main{width:min(1040px,100% - 32px);margin:0 auto;padding:72px 0 40px;flex:1}
@@ -26,6 +26,8 @@ h1{font-size:clamp(48px,9vw,104px);line-height:.92;letter-spacing:-.04em;margin:
 .game:hover{border-color:var(--c)}
 .game:focus-visible,a:focus-visible{outline:2px solid var(--c,var(--dota));outline-offset:3px}
 .dota{--c:var(--dota)}.dl{--c:var(--dl)}
+.soon{cursor:default}.soon:hover{border-color:var(--line)}
+.soon .go{background:transparent;color:var(--c);border:1px solid var(--c)}
 footer{width:min(1040px,100% - 32px);margin:0 auto;padding:24px 0 40px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--grey);font-size:14px}
 footer a{color:var(--text);text-decoration:none}footer a:hover{text-decoration:underline}
 footer span{margin-right:auto}
@@ -43,12 +45,12 @@ footer span{margin-right:auto}
       <ul><li>Сборки по свежей мете</li><li>Разбор матча с объяснением ИИ</li><li>Разбор в браузере и в Telegram</li></ul>
       <span class="go">Открыть ROSHIQ для Dota 2</span>
     </a>
-    <a class="game dl" href="https://github.com/Baramobatare-hash/ROSHIQ-Deadlock/releases/latest">
+    <div class="game dl soon" aria-disabled="true">
       <h2>Deadlock</h2>
-      <p>Отдельное приложение для Deadlock от того же автора.</p>
+      <p>Отдельное приложение для Deadlock от того же автора. Сейчас в разработке.</p>
       <ul><li>Установщик и портативная версия</li><li>Обновляется само</li><li>Бесплатно, с открытым кодом</li></ul>
-      <span class="go">Скачать ROSHIQ для Deadlock</span>
-    </a>
+      <span class="go">Скоро</span>
+    </div>
   </div>
 </main>
 <footer>
